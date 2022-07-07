@@ -2,9 +2,21 @@ main{
     display: flex;
     flex-direction: column;
     width: 100%;
-    background-color: bisque;
+    background-image: url(../imagens/bg.jpg);
+    background-size: cover;
     min-height: 100vh;
     align-items: center;
+    justify-content: center;
+    padding: 20px 20px 50px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: red;
+    width: 100%;
+    max-width: 800px;
 }
 
 
