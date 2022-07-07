@@ -1,10 +1,20 @@
+main{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: bisque;
+    min-height: 100vh;
+    align-items: center;
+}
+
+
 .grid{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 15px;
     width: 100%;
     max-width: 800px;
-    margin: 100px auto;
+    margin: 0;
 
 }
 
