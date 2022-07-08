@@ -102,7 +102,6 @@ const createCard = (character) => {
 const loadGame = () => {
 
     const duplicateCharacters = [ ...characters, ...characters ];
-
     const shuffledArray = duplicateCharacters.sort(() => Math.random() - 0.5);
 
     duplicateCharacters.forEach((character) => {
@@ -112,8 +111,8 @@ const loadGame = () => {
 }
 
 const startTimer = () => {
-
-    setInterval(() => {
+    
+    this.loop = setInterval(() => {
 
         const currentTime = +timer.innerHTML;
         timer.innerHTML = currentTime + 1;
