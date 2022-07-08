@@ -30,8 +30,9 @@ let secondCard = '';
 const checkEndGame = () => {
     const disabledCards = document.querySelectorAll('.disabled-card');
 
-    if (disabledCards.lenght === 20) {
-        alert('Parabéns, você conseguiu!');
+    if (disabledCards.length === 20) {
+    clearInterval(this.loop);
+    alert(`Parabéns, ${spanPlayer.innerHTML}! Seu tempo foi: ${timer.innerHTML}`);
     }
 }
 
@@ -122,6 +123,6 @@ const startTimer = () => {
 
 window.onload = () => {
     spanPlayer.innerHTML = localStorage.getItem('player');
-    //startTimer();
+    startTimer();
     loadGame();
 }
